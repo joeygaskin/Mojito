@@ -1,0 +1,438 @@
+
+/* @font-faces
+* --------------------------------------- */
+@font-face
+{
+ font-family: 'Florent';
+ src: url('fonts/florent/Florent-PosterTwo.ttf') format('truetype');
+}
+@font-face
+{
+ font-family: 'Inter-Ui Regular';
+ src: url('fonts/inter-ui/ttf/Inter-Regular.ttf') format('truetype');
+}
+@font-face
+{
+ font-family: 'Inter-Ui Bold';
+ src: url('fonts/inter-ui/ttf/Inter-Bold.ttf') format('truetype');
+}
+@font-face
+{
+ font-family: 'Inter-Ui Black';
+ src: url('fonts/inter-ui/ttf/Inter-Black.ttf') format('truetype');
+}
+
+/* HTML Basics
+* --------------------------------------- */
+*
+html
+{
+  margin: 0;
+  padding: 0;
+}
+body
+{
+  font-family: 'Inter-Ui Regular' !important;
+  overflow-x: hidden !important;
+}
+section
+{
+  padding: 6rem 0;
+}
+h1
+{
+  font-family: 'Inter-Ui Black';
+}
+h2
+{
+  font-family: 'Inter-Ui Black';
+  color: #212529;
+}
+h5
+{
+  font-family: 'Inter-Ui Bold';
+  color: #3363BC;
+}
+
+/* Global Use (Buttons, Links, etc.)
+* --------------------------------------- */
+@keyframes hotspotPulse{
+  0%{ transform: scale(1); opacity: 1; }
+  100%{ transform: scale(1.3); opacity: 0.1; }
+}
+.btn
+{
+  font-size: .95rem !important;
+}
+.hover-arrow:hover:after
+{
+    transform: translate3d(6px,0,0);
+}
+.hover-arrow:after
+{
+    display: inline-block;
+    margin-left: .375rem;
+    transition: transform .2s ease;
+    content: '→';
+}
+.svg-transition
+{
+  vertical-align: bottom !important;
+}
+.o-hidden
+{
+  overflow: hidden;
+}
+.z-n-1
+{
+  z-index: 1;
+}
+.lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.topline
+{
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: -.03em;
+  line-height: 1.1;
+}
+
+
+/* Navigation
+* --------------------------------------- */
+#navigation
+{
+  display: block;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  padding: 0 !important;
+  z-index: 10;
+}
+#navigation .btn-primary
+{
+  background-color: #28a745;
+  border-color: #28a745;
+}
+.navbar-brand
+{
+  font-family: 'Florent';
+  font-size: 20px !important;
+  color: #3363bc !important;
+}
+.nav-link
+{
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+    font-size: .9rem;
+    color: #000 !important;
+}
+.nav-item a
+{
+    color: #333;
+}
+.navbar-toggler-icon
+{
+  color: #000 !important;
+}
+.navbar-fixed-top.scrolled {
+  background-color: #FFF !important;
+  transition: background-color 200ms linear;
+}
+
+/* Mobile Menu Modal
+* --------------------------------------- */
+.fullscreen .modal-dialog
+{
+  margin: 0 0 0 0;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  padding: 0;
+  color: #3363bc;
+}
+.fullscreen .modal-content
+{
+  height: 100%;
+  min-height: 100%;
+  border-radius: 0;
+  color: #3363bc;
+  background: rgba(255, 255, 255, 0.97);
+  overflow:auto;
+}
+.fullscreen .modal-body ul
+{
+  padding: 100px 0 0 0;
+}
+.fullscreen .modal-body li
+{
+  padding: 10px 0 10px 0 ;
+}
+.fullscreen .modal-body a
+{
+  font-family: 'Inter-Ui Black';
+  color: #3363bc !important;
+  font-size: 150%;
+}
+.fullscreen .modal-body .dropdown-item
+{
+  font-family: 'Inter-Ui Bold' !important;
+  color: #333 !important;
+  font-size: 100% !important;
+}
+@media (max-width: 480px) {
+  .fullscreen .modal-body ul
+  {
+    padding: 30px 0 0 0;
+    overflow: auto;
+  }
+  .fullscreen .modal-body li
+  {
+    padding: 4px 0 4px 0 ;
+  }
+  .fullscreen .modal-body a
+  {
+    color: #333;
+    font-size: 200%;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+
+/* Scroll Back to Top Button
+* --------------------------------------- */
+.scrollbackBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  background-color: #3363bc;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scrollbackBtn:hover
+{
+  background-color: #1A366B;
+}
+
+/* Banner
+* --------------------------------------- */
+#banner
+{
+  background-color: #C0CEDA;
+  padding: 6rem 0 0 0 !important;
+}
+.banner-container
+{
+  max-width: 1000px !important;
+}
+.banner-title
+{
+  font-family: 'Inter-Ui Black';
+  font-size: 3rem;
+  line-height: 50px;
+}
+.banner-height
+{
+  height:116px;
+}
+#banner .btn-primary
+{
+  background-color: #3363BC;
+  border-color: #3363BC;
+}
+
+/* Form
+* --------------------------------------- */
+.custom-control {
+    padding-left: 1.875rem !important;
+}
+.form-group label {
+    font-size: .75rem;
+    color: #000;
+}
+.form-group small {
+    font-size: .75rem;
+    color: #000 !important;
+}
+.business-type
+{
+  font-size: .875rem !important;
+  color: #495057 !important;
+  line-height: 1.5 !important;
+}
+
+/* Features
+* --------------------------------------- */
+#features
+{
+
+}
+.features
+{
+  background-color: #FAFAFA;
+  border-radius: 10px;
+  padding:15px;
+  box-shadow: 0.5rem 0.5rem 0 rgba(95, 23, 130,.05);
+  margin-bottom: 30px;
+}
+.features:hover
+{
+  transform: translateY(-15px);
+  transition: transform .2s ease;
+}
+
+/* Tools
+* --------------------------------------- */
+#tools
+{
+  background-color: #FAFAFA;
+}
+#tools img
+{
+  border-radius: .625rem!important;
+  border: 1px solid #dee2e6!important;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+#dashboard li
+{
+  padding-left: 15px;
+}
+#dashboard li a
+{
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+  border-color: #eee !important;
+  border: 3px solid;
+  opacity: .4;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+@media screen and (max-width: 992px) {
+  #dashboard li a
+  {
+    height: 75px;
+    padding: 15px;
+  }
+  #dashboard h6
+  {
+    font-size: .875rem;
+  }
+}
+.dashboard-nav-item.active, .dashboard-nav-item.show
+{
+    transition: all 420ms cubic-bezier(.165,.84,.44,1);
+    outline: 0;
+    background: #fff;
+    box-shadow: 0 5px 20px 0 rgba(0,0,0,.1);
+    border-radius: 10px;
+    border: none !important;
+    opacity: 1 !important;
+}
+#spotlight {
+    cursor: pointer;
+    height: 2.25rem;
+    width: 2.25rem;
+    border-radius: 50%;
+    position: absolute;
+    animation: hotspotPulse 2s ease infinite alternate;
+    z-index: 2;
+}
+.spotlight
+{
+  background-color: #D38FFD;
+}
+.popover
+{
+  z-index: 9 !important;
+}
+
+/* Plugins
+* --------------------------------------- */
+#plugins
+{
+
+}
+
+/* Blog
+* --------------------------------------- */
+#blog
+{
+  background-image: linear-gradient(to bottom, #E3F2FF, #FFFFFF);
+}
+.blog-title
+{
+  font-family: 'Inter-Ui Black';
+  font-size: 2.5rem;
+  line-height: 50px;
+}
+
+/* Footer
+* --------------------------------------- */
+#footer
+{
+  background-image: linear-gradient(to bottom, #1A366B, #3866A4);
+}
+#footer h3
+{
+  font-family: 'Inter-Ui Bold' !important;
+  font-size: 1.8rem;
+  color: #FFF;
+}
+#footer .btn-primary
+{
+  background-color: #28a745;
+  border-color: #28a745;
+  font-size: 1.25rem !important;
+  line-height: 1.5 !important;
+}
+#footer .form-control
+{
+  display: inline-block;
+  width: 50%;
+}
+#footer a:hover
+{
+    color: #28a745;
+}
+.get-started
+{
+  background-color: #3363BC !important;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+  border-radius: 10px !important;
+}
+.footer-link {
+    display: block;
+    padding: .5rem 1rem;
+    color: #fff;
+    font-size: .875rem;
+}
+.social-icons
+{
+  font-size: 25px;
+}
+.social-icons a
+{
+  padding: 0 5px;
+  transition: 0.5s;
+  display: inline-block;
+  color: #FFF;
+}
+.social-icons a:hover
+{
+  transform: translateY(-10px);
+}
