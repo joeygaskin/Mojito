@@ -24,7 +24,6 @@
 
 /* HTML Basics
 * --------------------------------------- */
-*
 html
 {
   margin: 0;
@@ -98,6 +97,12 @@ h5
   font-weight: 600;
   letter-spacing: -.03em;
   line-height: 1.1;
+}
+@media (max-width: 480px) {
+.topline {
+  font-size: 2rem;
+  font-weight: 400;
+  }
 }
 
 
@@ -246,6 +251,14 @@ h5
   font-size: 3rem;
   line-height: 50px;
 }
+@media (min-width: 480px) {
+  .banner-title
+  {
+    font-size: 2.5rem;
+    line-height: 40px;
+  }
+}
+
 .banner-height
 {
   height:116px;
@@ -382,6 +395,13 @@ h5
   line-height: 50px;
 }
 
+@media (max-width: 480px) {
+  .blog-title
+  {
+    font-size: 2rem;
+  }
+}
+
 /* Footer
 * --------------------------------------- */
 #footer
@@ -404,7 +424,7 @@ h5
 #footer .form-control
 {
   display: inline-block;
-  width: 50%;
+  width: 60%;
 }
 #footer a:hover
 {
@@ -421,6 +441,11 @@ h5
     padding: .5rem 1rem;
     color: #fff;
     font-size: .875rem;
+}
+@media (max-width: 414px) {
+  .footer-link {
+      padding: .5rem .5rem !important;
+  }
 }
 .social-icons
 {
