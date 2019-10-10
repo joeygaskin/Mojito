@@ -64,6 +64,10 @@ h5
 {
   font-size: .95rem !important;
 }
+.btn:hover
+{
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
 .hover-arrow:hover:after
 {
     transform: translate3d(6px,0,0);
