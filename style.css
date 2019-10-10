@@ -78,6 +78,7 @@ h5
 .svg-transition
 {
   vertical-align: bottom !important;
+  margin-bottom: -2px !important;
 }
 .svg-baseline
 {
@@ -257,6 +258,13 @@ h5
   {
     font-size: 2.5rem;
     line-height: 40px;
+  }
+}
+@media (max-width: 320px) {
+  .banner-title
+  {
+    font-size: 2rem;
+    line-height: 30px;
   }
 }
 
