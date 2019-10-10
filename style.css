@@ -79,6 +79,10 @@ h5
 {
   vertical-align: bottom !important;
 }
+.svg-baseline
+{
+  vertical-align: baseline !important;
+}
 .o-hidden
 {
   overflow: hidden;
@@ -345,6 +349,14 @@ h5
   #dashboard h6
   {
     font-size: .875rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  #dashboard li a
+  {
+    width:115px;
+    height: 100px;
+    padding: 15px;
   }
 }
 .dashboard-nav-item.active, .dashboard-nav-item.show
