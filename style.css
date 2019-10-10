@@ -78,6 +78,7 @@ h5
 .svg-transition
 {
   vertical-align: bottom !important;
+  margin-bottom: -2px !important;
 }
 .svg-baseline
 {
