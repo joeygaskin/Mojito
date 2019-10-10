@@ -252,7 +252,7 @@ h5
   font-size: 3rem;
   line-height: 50px;
 }
-@media (min-width: 480px) {
+@media (max-width: 480px) {
   .banner-title
   {
     font-size: 2.5rem;
@@ -420,7 +420,7 @@ h5
 #footer h3
 {
   font-family: 'Inter-Ui Bold' !important;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #FFF;
 }
 #footer .btn-primary
@@ -433,7 +433,7 @@ h5
 #footer .form-control
 {
   display: inline-block;
-  width: 60%;
+  width: 65%;
 }
 #footer a:hover
 {
@@ -457,7 +457,7 @@ h5
   }
   #footer h3
   {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 .social-icons
